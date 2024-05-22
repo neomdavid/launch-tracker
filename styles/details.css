@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  padding: 40px 0; 
+  padding: 60px 0; 
   border-radius: 10px;
 }
 .rocket-name{
@@ -68,21 +68,32 @@
 }
 
 
+
+
 .provider-container{
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 10000px;
   background-color: rgb(30, 30, 30);
-  padding: 20px 20px;
+  padding: 60px 20px;
   align-items: center;
+  border-radius: 10px;
+}
+.provider-image-container{
+  width: 43vw;
+  margin-bottom: 25px;
+}
+.provider-image-container img{
+  width: 100%;
 }
 .provider-container .name,
 .admin,
 .code,
 .description
 {
-  justify-content: left;
+  display: flex;
+  justify-content: center;
   width: 70%;
   font-weight: 800;
   font-size: 4.5em;
@@ -103,6 +114,28 @@
   font-weight: 300;
   font-size: 1.2em;
   line-height: 35px;
+  text-align: center;
+}
+.successful-fail-container{
+  margin-top: 25px;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.successful-fail-container div{
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+.successful{
+  background-color: rgba(0, 128, 0, 0.435);
+}
+.failed{
+  background-color: rgba(255, 0, 0, 0.38);
+}
+.successful-fail-container span{
+  font-weight: 800;
 }
 
 
