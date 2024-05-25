@@ -6,3 +6,14 @@ export async function getUpcomingLaunches(){
 }
 
 export const calledUpcomingLaunches = JSON.parse(localStorage.getItem('upcomingLaunches'));
+
+export function getLaunchObjectByID(id){
+  let launchObject;
+  calledUpcomingLaunches.forEach((upcomingLaunch)=>{
+    if(id === upcomingLaunch.id){
+      console.log('got it');
+      launchObject = upcomingLaunch;
+    }
+  });
+  return launchObject;
+}

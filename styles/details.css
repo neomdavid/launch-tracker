@@ -6,7 +6,7 @@
 }
 .image-container img{
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   object-fit: cover;
   object-position: top;
 } 
@@ -14,6 +14,7 @@
 .details-container{
   display: flex;
   flex-direction: column;
+  width: 70vw;
 }
 .details{
   margin-top: -4px;
@@ -29,6 +30,8 @@
 .rocket-name{
   font-size: 4.5em;
   font-weight: 800;
+  width: 80%;
+  text-align: center;
 }
 .timer{
   width: 70%;
@@ -145,6 +148,7 @@
   margin-bottom: 50px;
 }
 .rocket-image-container{
+  width: 100%;
 }
 .rocket-image-container img{
   flex-grow: 1;

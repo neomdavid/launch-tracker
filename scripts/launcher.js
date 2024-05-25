@@ -12,6 +12,7 @@ import { formatTime } from "./util/localTimeConverter.js";
   
     const [rocketName, groupName] = upcomingLaunch.name.split(' | ');
     const [date, time] = formatTime(upcomingLaunch.net);
+    console.log(upcomingLaunch.name);
 
     launchListHTML+=`
     <div class="launch-outer-container">
