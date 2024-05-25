@@ -20,7 +20,7 @@ import { formatTime } from "./util/localTimeConverter.js";
         <div class="date">${date}</div>
         <div class="time">${time}</div>
       </div>
-      <div class="launch-container">
+      <a href="details.html?id=${upcomingLaunch.id}"><div class="launch-container">
         <div class="rocket-name">${rocketName}</div>
         <div class="group">${groupName}</div>
         <div class="details-container">
@@ -29,6 +29,7 @@ import { formatTime } from "./util/localTimeConverter.js";
         </div>
       
       </div>
+      </a>
     </div>
     `
   });
