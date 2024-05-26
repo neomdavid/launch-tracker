@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   width: 70vw;
+  text-align: center;
 }
 .details{
   margin-top: -4px;
@@ -99,6 +100,10 @@
   width: 70%;
   font-weight: 800;
   font-size: 4.5em;
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Breaks long words at the boundaries */
+  overflow-wrap: break-word; /* Ensures long words are broken to fit the container */
+  text-align: center;
 }
 .admin,.code{
   font-weight: 400;
@@ -108,6 +113,7 @@
 .code{
   font-weight: 300;
   color: rgba(255, 255, 255, 0.802);
+
 }
 .description{
   display: flex;
@@ -149,10 +155,11 @@
 }
 .rocket-image-container{
   width: 100%;
+  flex: 1.5;
+
 }
 .rocket-image-container img{
-  flex-grow: 1;
-  width: 22vw;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -164,6 +171,7 @@
   padding: 30px;
   font-weight: 400;
   font-size: 1.2em;
+  flex: 2;
 }
 .rocket-stats-container .name{
   display: flex;
@@ -185,10 +193,16 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  row-gap: 7px;
 }
 .left-container div,
 .right-container div{
   display: flex;
   margin-top: 2px;
   justify-content: space-between;
+}
+
+.left-container div .right,
+.right-container div .right{
+  font-weight: 300;
 }
