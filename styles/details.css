@@ -205,3 +205,62 @@
 .right-container div .right{
   font-weight: 300;
 }
+
+@media only screen and (max-width:1250px){
+  .upper-stats-container, .lower-stats-container{
+    flex-direction: column;
+  }
+  .right-container{
+    margin-top: 10px;
+  }
+  .upper-stats-container div,
+  .lower-stats-container div{
+    width: 100%;
+  }
+  .upper-stats-container div .right,
+  .lower-stats-container div .right{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+  }
+  .upper-stats-container div .left,
+  .lower-stats-container div .left{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+}
+@media only screen and (max-width:800px){
+  .time-box .value{
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width:730px){
+
+  .time-box .value{
+    font-size: 2em;
+  }
+
+}
+@media only screen and (max-width:700px){
+  .time-box {
+    flex:1;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .time-box .value{
+    font-size: 25px;
+  }
+  .time-box .label{
+    font-size: 10px;
+  }
+  .timer{
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+}

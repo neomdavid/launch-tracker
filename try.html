@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Hello World in JavaScript</title>
+
+<input class="first-num" placeholder="First Num">
+<input class="second-num"
+placeholder="Second Num">
+
+<button class="button">Enter</button>
+
+</head>
+<body>
+</body>
+<script type="text/javascript">
+   const firstNum =document.querySelector('.first-num');
+   const secondNum =document.querySelector('.second-num');
+   document.querySelector('.button').addEventListener('click',()=>{
+    document.write(Number(firstNum.value)+Number(secondNum.value)+' po, your honor.');
+   });
+</script>
+</html>
