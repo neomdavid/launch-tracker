@@ -8,6 +8,7 @@
   border-radius: 50px;
   position: relative;
   color: rgb(194, 192, 192);
+  width: 80vw;
 }
 
 /*
@@ -37,7 +38,11 @@
 */
 .upcoming-container,
 .previous-container {
-  padding: 18px 130px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
   border-radius: 50px;
   transition: background-color 0.3s;
   z-index: 100;
@@ -73,7 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin-left: 120px;
 }
 .floating-dot{
